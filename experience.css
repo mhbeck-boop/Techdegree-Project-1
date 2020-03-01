@@ -1,0 +1,207 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+  }
+    
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background:  rgb(0, 58, 105);
+  }
+  /* Link Styles */
+  
+  a {
+    text-decoration: none;
+    color: #999;
+  }
+  a:hover {
+    color: #6633ff;
+  }
+  
+  /* Section Styles */
+  
+  .main-nav {
+    width: 100%;
+    background: black;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .nav .name {
+      display: block;
+      margin-right: auto;
+      color: white;
+  }
+  .nav li {
+    padding: 5px 10px 10px 10px;
+  }
+  .nav a {
+    transition: all .5s;
+  }
+  .nav a:hover {
+    color: white
+  }
+  
+  header {
+    text-align: center;
+    background: url('images/beach.jpg') no-repeat top center ;
+    background-size: cover;
+    margin-bottom: 5px;
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    border-bottom: 3mm solid #0a381a;
+  }
+  header {
+    line-height: 1.5;
+  }
+  header .experience-main-img {
+    margin-top: 50px;
+    width: 200px;
+    height: 250px;
+    border-radius: 5%;
+    border: 5px solid rgb(7, 0, 0);
+    transition: all 1s ease-in-out;
+  }
+  header .profile-image:hover {
+    transform: scale(0.5);
+  }
+  .tag {
+    background-color: #efefef;
+    color: black;
+    font-variant-caps: all-small-caps;
+    padding: 10px;
+    border-radius: 5px;
+    display: table;
+    margin: 5px auto;
+  } 
+  .location {
+    background-color: rgb(0, 58, 105);
+    color: rgb(209, 178, 0);
+  }
+
+  .box {
+    min-height: 100%;
+    height: 100px;
+    padding-bottom: 100px;
+  }
+
+  .job {
+    margin: 10px;
+    padding: 30px;
+    max-width: 900px;
+    text-align: left;
+    background: #fff;
+    border-bottom: 7px solid #ccc;
+    border-radius: 6px;
+    transition: all .5s;
+  }
+  
+  .job:hover {
+    border-color: #0a381a;
+  }
+  
+footer {
+    width: 100%;
+    min-height: 30px;
+    padding: 20px 0 40px 20px;
+    position: relative;
+}
+  
+  footer .copyright {
+    top: -8px;
+    font-size: .75em;
+    color: white;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+  }
+  
+  a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    transition: all 2ms ease-in;
+  }
+  a.social:hover {
+  transform: scale(2);
+  }
+  
+  a.twitter {
+    background-image: url(images/twitter.svg);
+  }
+  a.linkedin {
+    background-image: url(images/linkedin.svg);
+  }
+  a.github {
+    background-image: url(images/github.svg);
+  }
+  a.social:hover {
+    opacity: 1;
+  }
+  .clearfix {
+    clear: both;
+  }
+  
+  /* Styles for larger screens */
+  @media screen and (min-width: 720px) {
+    
+    .flex {
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: flex; 
+        max-width: 1200px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+  
+    header {
+      min-height: 470px;
+    }
+  
+    .nav {
+      max-width: 1200px;
+      padding: 0 30px;
+    }
+  
+  
+    main {
+      padding-top: 20px;
+    }
+  
+    main p {
+      line-height: 1.6em;
+    }
+  
+    footer {
+      font-size: 1.3em;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+  
+  }
+  
