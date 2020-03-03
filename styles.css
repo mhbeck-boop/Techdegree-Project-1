@@ -125,15 +125,15 @@ ul.skills {
 }
 
 .skills li {
-  border-radius: 6px;
+  border-radius: 50%;
   display: inline-block;
   background: #0399ff;
   color: white;
-  padding: 5px 10px;
+  padding: 5px 15px;
   margin: 2px;
 }
 .job {
-  margin: center 5px;
+  margin: auto;
   padding: 30px;
   min-width: 250px;
   text-align: left;
@@ -154,6 +154,7 @@ ul.skills {
 .addy{
   float:right;
   padding-right: 20px;
+  color: #999999;
 }
 footer {
   width: 100%;
